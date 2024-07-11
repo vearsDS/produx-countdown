@@ -21,6 +21,15 @@ const App = () => {
     let seconds = parseInt(total_seconds % 60);
     let minutes = parseInt(total_minutes % 60);
     let hours = parseInt(Math.floor(total_hours % 24));
+    if (miliseconds < 0) {
+      total_seconds = 0;
+      total_minutes = 0;
+      total_hours = 0;
+      days = 0;
+      seconds = 0;
+      minutes = 0;
+      hours = 0;
+    }
 
     return {
       days,
