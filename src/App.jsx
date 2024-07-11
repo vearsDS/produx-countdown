@@ -4,7 +4,7 @@ import ChevronIcon from "./icons/ChevronIcon";
 
 const App = () => {
   let date = new Date();
-  const endTime = new Date("2024-07-11T20:00:00");
+  const endTime = new Date("2024-07-15T20:00:00");
   const newdate = endTime - date;
   const [time, setTime] = useState(newdate);
   useEffect(() => {
